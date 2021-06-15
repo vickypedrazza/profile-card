@@ -1,0 +1,131 @@
+:root{
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 1%, 84%);
+    }
+    
+    
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    body{
+        font-family: "Kumbh Sans", sans-serif;
+        color: var(--very-dark-desaturated-blue);
+        font-weight: 700;
+    }
+
+    a:link{
+        text-decoration: none;
+    }
+
+    .main{
+        font-size: 18px;
+        background-color: var(--dark-cyan);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .card{
+        width: 400px;
+        text-align: center;
+        border-radius: 15px;
+        background-color: white;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .card-header{
+        background-image: url(/images/bg-pattern-card.svg);
+        background-size: cover;
+        background-position: center center;
+        height: 150px;
+    }
+    
+    .card-text{
+        padding: 0 20px 30px 20px
+    }
+    
+    .card-image img{
+        width: 35%;
+        height: auto;
+        border-radius: 50%;
+        border: solid 5px white;
+        margin: -50px auto 20px auto;
+    }
+    
+    .name-age{
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    
+    .age,
+    .city,
+    .type{
+        font-weight: 400;
+        color: var(--dark-grayish-blue);
+    }
+    
+    .card-footer{
+        border-top: solid 1px var(--dark-gray);
+        display: flex;
+        padding: 10px 30px;
+    }
+    
+    .card-footer .item{
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-weight: 400;
+        margin: 10px 0
+    }
+    
+    .card-footer span{
+        display: flex;
+        justify-content: center;
+        letter-spacing: 1px;
+        padding-top: 5px;
+        font-size: .8rem;
+    }
+    
+     
+    .circles .c1{  
+        position: absolute; 
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 768px;
+        width: 768px;
+        top: -550px;
+        left: -350px;
+    }
+    
+    .circles .c2{
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 768px;
+        width: 768px;
+        bottom: -450px;
+        right: -50px;
+    } 
+    
+    .attribution {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            font-size: 11px; 
+            text-align: center; 
+        }
+    .attribution a { 
+            color: hsl(228, 45%, 44%); 
+        }
+    
